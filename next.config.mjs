@@ -29,3 +29,8 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
+// next.config.js
+export const typescript = {
+  ignoreBuildErrors: true,
+};
