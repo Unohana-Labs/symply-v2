@@ -11,7 +11,7 @@ import dark from "@/public/images/hero.png";
 export const HeroSection = () => {
   const { theme } = useTheme();
   return (
-    <section className="px-32 w-full dark:bg-background  dark:bg-dot-white/[0.2] bg-dot-[#09090B]/[0.2] relative">
+    <section className="px-6 md:px-32 w-full dark:bg-background  dark:bg-dot-white/[0.2] bg-dot-[#09090B]/[0.2] relative">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#09090B] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
         <div className="text-center space-y-8">
