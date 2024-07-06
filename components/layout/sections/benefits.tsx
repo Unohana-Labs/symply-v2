@@ -73,7 +73,7 @@ export const BenefitsSection = () => {
                     color="hsl(var(--primary))"
                     className="mb-6 text-primary"
                   />
-                  <span className="text-5xl text-background font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
+                  <span className="text-5xl text-black font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
                     0{index + 1}
                   </span>
                 </div>
