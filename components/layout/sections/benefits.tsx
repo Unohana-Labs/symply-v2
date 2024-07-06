@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
-import { icons } from "lucide-react";
+import { BarChart, icons } from "lucide-react";
 
 interface BenefitsProps {
   icon: string;
@@ -11,27 +11,33 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "Build Brand Trust",
+    title: "Amplified Efficiency",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Streamline operations and eliminate manual tasks. Our software automates processes, allowing you to focus on growth.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Profit Maximization",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Accurate quotes, efficient resource allocation, and streamlined invoicing boost your bottom line. It’s like having a financial wizard on your team.",
   },
   {
-    icon: "Wallet",
+    icon: "DollarSign",
     title: "Higher Conversions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "As your agency expands, our software scales with you. No bottlenecks, no chaos. Just smooth operations, even during growth spurts.",
   },
   {
     icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    title: "Happy Clients",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Happy clients mean repeat business and referrals. Our tool ensures timely deliveries, accurate billing, and transparent communication. Client smiles? Check!",
+  },
+  {
+    icon: "BarChart",
+    title: "Holistic Insights",
+    description:
+      "Dive into performance metrics—project profitability, resource utilization, and client satisfaction. Make informed choices, spot trends, and steer your agency toward growth.",
   },
 ];
 
@@ -47,9 +53,9 @@ export const BenefitsSection = () => {
             Your Shortcut to Success
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            We don’t settle for ordinary. Our commitment goes beyond
+            features—it’s about driving outcomes. Let’s explore how our tailored
+            solutions, reliability, and innovation elevate your business:
           </p>
         </div>
 

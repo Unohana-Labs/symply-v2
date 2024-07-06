@@ -35,20 +35,12 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#login",
+    label: "Login",
   },
   {
-    href: "#team",
-    label: "Team",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
+    href: "#Register",
+    label: "Sign Up",
   },
 ];
 
@@ -107,10 +99,11 @@ export const Navbar = () => {
                     key={href}
                     onClick={() => setIsOpen(false)}
                     asChild
-                    variant="ghost"
-                    className="justify-start text-base"
+                    className="justify-start text-base w-full"
                   >
-                    <Link href={href}>{label}</Link>
+                    <Link className="text-white" href={href}>
+                      {label}
+                    </Link>
                   </Button>
                 ))}
               </div>
@@ -128,44 +121,15 @@ export const Navbar = () => {
       {/* <!-- Desktop --> */}
       <NavigationMenu className="hidden lg:block mx-auto">
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger className="bg-card text-base">
-              Features
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
-                <ul className="flex flex-col gap-2">
-                  {featureList.map(({ title, description }) => (
-                    <li
-                      key={title}
-                      className="rounded-md p-3 text-sm hover:bg-muted"
-                    >
-                      <p className="mb-1 font-semibold leading-none text-foreground">
-                        {title}
-                      </p>
-                      <p className="line-clamp-2 text-muted-foreground">
-                        {description}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
+          <NavigationMenuItem className="flex gap-2 items-center">
             {routeList.map(({ href, label }) => (
               <NavigationMenuLink key={href} asChild>
-                <Link href={href} className="text-base px-2">
-                  {label}
-                </Link>
+                <Button
+                  variant={"ghost"}
+                  className="text-base px-2 w-full underline underline-offset-4"
+                >
+                  <Link href={href}>{label}</Link>
+                </Button>
               </NavigationMenuLink>
             ))}
           </NavigationMenuItem>

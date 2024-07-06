@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { SparklesCore } from "@/components/ui/sparkles";
-import { icons } from "lucide-react";
+import { CircleDollarSign, icons } from "lucide-react";
 
 interface FeaturesProps {
   icon: string;
@@ -11,40 +11,35 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "CircleDollarSign",
+    title: "Financial Services Suite",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Beyond basic accounting, we handle account creation, seamless transfers, salary payments, and efficient disbursement. Your financial operations become streamlined and error-free.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Users",
+    title: "Team Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Efficiently allocate resources, track progress, and foster collaboration. Your teams work seamlessly, meeting project goals and client expectations.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
+    title: "Client-to-Business Bridge",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Centralize communications, manage client expectations, and enhance satisfaction. Strong client relationships drive repeat business and referrals.",
+  },
+
+  {
+    icon: "LineChart",
+    title: "Data-Driven Insights",
+    description:
+      "Monitor milestones, allocate tasks, and achieve project success. Our project management tools keep everything on track, ensuring timely deliveries.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "File",
+    title: "Efficient Document Handling",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
-  },
-  {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
-  },
-  {
-    icon: "Newspaper",
-    title: "Clear Headline",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Our document management feature organizes, secures, and retrieves files. Compliance, productivity, and peace of mind—all in one place.",
   },
 ];
 
@@ -52,7 +47,7 @@ export const FeaturesSection = () => {
   return (
     <section
       id="features"
-      className="px-32 py-24 sm:py-32 relative overflow-hidden"
+      className="px-6 md:px-32 py-24 sm:py-32 relative overflow-hidden"
     >
       <div className="w-full absolute inset-0 min-h-screen h-full">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#09090B] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
@@ -75,9 +70,11 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        it’s not about features; it’s about impact. We blend innovation,
+        reliability, and personalized service. Our commitment to excellence
+        drives results—whether it’s seamless integrations, data-driven insights,
+        or exceptional support. We’re not just a solution; we’re your strategic
+        advantage.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -94,7 +91,7 @@ export const FeaturesSection = () => {
                   />
                 </div>
 
-                <CardTitle>{title}</CardTitle>
+                <CardTitle className="text-center">{title}</CardTitle>
               </CardHeader>
 
               <CardContent className="text-muted-foreground text-center">

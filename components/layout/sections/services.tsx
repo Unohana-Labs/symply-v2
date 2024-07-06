@@ -19,23 +19,25 @@ const serviceList: ServiceProps[] = [
   {
     title: "Custom Domain Integration",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Seamlessly connect your unique domain to our platform. Enhance branding, credibility, and user experience by serving content from your own web address.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: "Data-Driven Insights",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "Numbers tell stories. Leverage analytics to optimize performance, enhance conversions, and stay ahead of the curve.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
+    title: "Financial Services",
+    description:
+      "Beyond basic accounting, we handle account creation, seamless transfers, salary payments, and efficient disbursement.",
+    pro: 1,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
+    title: "Team Management",
+    description:
+      "Efficiently allocate resources, track progress, and foster collaboration.",
     pro: 1,
   },
 ];
@@ -51,8 +53,8 @@ export const ServicesSection = () => {
         Grow Your Business
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        From marketing and sales to operations and strategy, we have the tools
+        to help you better your agency.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
